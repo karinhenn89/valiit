@@ -12,13 +12,39 @@ public class Simplecalculator {
         int num2 = scanner.nextInt();
 
         int addition = num1 + num2;
-        System.out.println("Addition: " + addition);
-        int subtraction = num1 - num2;
-        System.out.println("Subtraction: " + subtraction);
-        int multiplication = num1 * num2;
-        System.out.println("Multiplication: " + multiplication);
-        int division = num1 / num2;
-        System.out.println("Division: " + division);
+        System.out.print("Addition: " + addition);
 
+        if (addition % 2 == 0) {
+            System.out.println(", Even");
+        } else {
+            System.out.println(", Odd");
+        }
+        int subtraction = num1 - num2;
+        System.out.print("Subtraction: " + subtraction);
+        if (subtraction % 2 == 0) {
+            System.out.println(", Even");
+        } else {
+            System.out.println(", Odd");
+        }
+        int multiplication = num1 * num2;
+        System.out.print("Multiplication: " + multiplication);
+        if (multiplication % 2 == 0) {
+            System.out.println(", Even");
+        } else {
+            System.out.println(", Odd");
+        }
+        if (num2 == 0){                                     //välistada nulliga jagamine, muidu error
+            System.out.println("You cant divide by 0.");
+        } else {
+            int division = num1 / num2;
+            System.out.print("Division: " + division);
+
+            if (division % 2 == 0) {
+            System.out.println(", Even");
+            } else {
+                System.out.println(", Odd");
+            }
+
+            }
+        }
     }
-}
