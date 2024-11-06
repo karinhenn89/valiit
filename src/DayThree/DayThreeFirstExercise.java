@@ -4,20 +4,25 @@ package DayThree;
 public class DayThreeFirstExercise {
     public static void main(String[] args) {
 
-    String sentence = "Today is a beautiful day";
-    System.out.println(sentence);
+        int a = 5;
+        int b = 6;
+        int c = 7;
+        getVolume(a,b,c);
 
-    char a ='a';
+    }
 
-    int length = sentence.length();         //loeb stringi pikkuse
-    char firstLetter = sentence.charAt(0);
+    private static void getVolume(int a, int b, int c) {
+        int volume = a*b*c;
+        System.out.println(volume);
 
+        checkVolume(volume);
 
-    System.out.println("Sentence lenght is: " + length + " characters.");
-    System.out.println("First letter of the sentence is: " + firstLetter);
-
-
-
-
+    }
+    private static void checkVolume(int volume) {
+        if (volume < 0) {
+            System.out.println("Volume is negative");
+        } else{
+            System.out.println("Volume is positive");
+        }
     }
 }
