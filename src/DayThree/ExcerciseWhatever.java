@@ -14,24 +14,20 @@ public class ExcerciseWhatever {
 
     }
 
-    private static void getAge(){
-        System.out.println("30");
-    }
-
     private static void getName(){
         System.out.println("John");
     }
 
     private static void checkUserAge(){
-        int age = 30;                                           //mis siis kui siin vanus muutub
+        int age = 20;                                           //mis siis kui siin vanus muutub
         if (age < 18) {
             System.out.println("you are younger than 18 years");
         } else {
-            getAgee();
+            getAgee(age);
         }
     }
-    private static void getAgee(){
-        System.out.println("Age is 30");                       //kuidas vanuse muutumise korral age siia muutujaks tuua
+    private static void getAgee(int age){
+        System.out.println("Age is:" + age);                       //kuidas vanuse muutumise korral age siia muutujaks tuua
     }
 
 
