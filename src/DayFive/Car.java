@@ -6,19 +6,22 @@ public class Car {
     String brand;
     String model;
     int year;
+
     //Deafult constructor            // loome etteandmata objektidele
-    public Car(){                   //pole tüüpi. klassi nimi - kõikidel objektidel samad väärtused - siin määratud väärtused.
+    public Car() {                   //pole tüüpi. klassi nimi - kõikidel objektidel samad väärtused - siin määratud väärtused.
         brand = "Not specified";
         model = "Unknown";
         year = 2000;
     }
+
     //parametrizised constructor
     public Car(String brand, String model, int year) {                   //pole tüüpi. klassi nimi - kõikidel objektidel samad väärtused - siin määratud väärtused.
-        this.brand  = brand;
+        this.brand = brand;
         this.model = model;
         this.year = year;
     }
-    public static void main(String[] args) {
+}
+   /* public static void main(String[] args) {
 
         // Creating objects of the Car class
         Car car1 = new Car();                                       //loome Car klassist uue objekti - ta pole string, int...ta ongi Car tüüpi
@@ -35,4 +38,4 @@ public class Car {
         System.out.println("Year: " + year);
     }
 
-}
+}*/ //Selle võib kõik välja kommenteerida.seda üldiselt objekti loomise juures pole
